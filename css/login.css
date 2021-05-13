@@ -1,0 +1,250 @@
+/* Fonts */
+/* Mark Pro Regular */
+@font-face {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Mark Pro Regular'), url('../fonts/markPro/MARKPRO.woff') format('woff');
+}
+
+html {
+  height: 100%;
+}
+body {
+  background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+  box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
+  height: 100%;
+}
+
+/* Removendo caracteristicas padrões do navegador */
+input:focus {
+  background: #26292C !important;
+  box-shadow: none !important;
+  border-color: #fff !important;
+  color: #E0E0E0 !important;
+}
+
+/* Para continuar navegando de forma segura, efetue o login na rede. */
+.content-saudacao-login {
+  width: 379px;
+  margin: 0 auto;
+}
+
+.title-saudacao-login {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 76px;
+  color: #E0E0E0;
+}
+
+.desc-saudacao-login {
+  font-family: 'Mark Pro Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #E0E0E0;
+}
+
+/* Formulário de Login */
+.content-login {
+  width: 379px;
+  margin: 0 auto;
+}
+
+.content-login .title-content-login {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  color: #E0E0E0;
+}
+
+/* Inputs no login */
+.inputs {
+  height: 60px;
+  background: #26292C;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50px;
+  color: #E0E0E0;
+  font-family: 'Mark Pro Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-right: 45px;
+}
+/* end */
+
+/* Inputs com erro */
+.inputs-error, .inputs-error:focus {
+  border: 1px solid #E9B425 !important;
+}
+#text-error {
+  display: none;
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #E9B425;
+}
+/* end */
+
+/* Ícones dos inputs */
+.icon-input {
+  margin: 18px 0 0 -20px;
+  transition: margin 0.5s;
+}
+/* Usado para mover o ícone de lugar ao clicar no input */
+.icon-input-move {
+  margin: 18px 0 0 -67px !important;
+  transition: margin 0.5s;
+}
+/* end */
+
+
+.content-login ::placeholder {
+  color: #E0E0E0;
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Botão no Login */
+.content-login .button-content-login {
+  background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+  border-image-source: linear-gradient(132.34deg, #FF2D04 22.57%, #C13216 72.04%);
+  height: 67px;
+  margin-top: 20px;
+  border: 0 solid;
+  border-radius: 50px;
+}
+
+/* Texto no botão */
+.content-login .button-content-login span {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+/* lado esquerdo */
+.left-side {
+  margin: 0 auto;
+}
+
+/* lado direito */
+.right-side {
+  background-image: url('../img/fundo_login.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Logo no lado direito */
+.right-side img {
+  width: 153px;
+  margin-top: 35px;
+}
+
+/* Mostrado quando visto de dispositivos menores */
+.img-top-device-small {
+  display: none;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* Comportamentos */
+/* Dispositivos pequenos e médios */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .right-side {
+    display: none !important;
+  }
+  .container-fluid {
+    background-image: url('../img/fundo_login.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 120vh;
+    background-position: 33%;
+  }
+  .img-top-device-small {
+    display: block;
+    width: 153px;
+    padding-top: 35px;
+    margin: 0 auto;
+  }
+  .content-saudacao-login {
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  .content-login {
+    width: 200px;
+  }
+  .desc-saudacao-login, .title-saudacao-login {
+    text-align: center;
+  }
+  .icon-input {
+    margin: -121px 0 0 209px;
+  }
+  .icon-input-move {
+    margin: -121px 0 0 163px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .right-side {
+    display: none !important;
+  }
+  .container-fluid {
+    background-image: url('../img/fundo_login.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100vh;
+    background-position: 33%;
+  }
+  .img-top-device-small {
+    display: block;
+    width: 153px;
+    padding-top: 35px;
+    margin: 0 auto;
+  }
+  .content-saudacao-login {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+  .content-login {
+    width: 300px;
+  }
+  .desc-saudacao-login, .title-saudacao-login {
+    text-align: center;
+  }
+  .icon-input {
+    margin: -121px 0 0 294px;
+  }
+  .icon-input-move {
+    margin: -121px 0 0 228px !important;
+  }
+}
+
+/* Dispositivos grandes */
+@media (min-width: 1024px) and (max-width: 2560px) {
+  /*  */
+ }

@@ -1,0 +1,339 @@
+/* Fonts */
+/* Mark Pro Regular */
+@font-face {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Mark Pro Regular'), url('../fonts/markPro/MARKPRO.woff') format('woff');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
+  box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
+
+  /* Imagem de fundo - Bola */
+  background-image: url('../img/bola-uol.png');
+  background-repeat: no-repeat;
+  background-size: 350px;
+  height: 100vh;
+  background-position: 0 130px;
+  overflow-x: hidden;
+}
+
+.row-home {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Logo */
+.home-logo-left-top {
+  width: 150px;
+  height: 42.75px;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+/* hora */
+.home-hour-top {
+  text-align: center;
+  margin-top: 25px;
+}
+.home-hour-top #hora {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 91.5px;
+  text-align: center;
+  color: #222222;
+}
+.home-hour-top #detailsTime {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #222222;
+}
+/* end hora */
+
+/* Clima */
+.home-climate-top {
+  margin-top: 25px;
+  margin-right: 40px;
+}
+
+.home-climate-top img {
+  width: 34px;
+  height: 34px;
+  margin-top: 10px;
+}
+
+/* Nome da cidade */
+.home-city-name {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.home-degrees {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 61px;
+  text-align: center;
+  color: #222222;
+}
+/* end Clima */
+
+/* Textos no Home */
+.home-text-body {
+  margin: 73px 134px;
+  text-align: right;
+}
+
+.home-text-body h3 {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 81px;
+  color: #C12D18;
+}
+
+.home-text-body h5 {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 23px;
+  color: #C12D18;
+}
+
+.home-text-body p {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #222222;
+}
+/* end Textos no Home */
+
+.p-l-0 {
+  padding-left: 0 !important;
+}
+.p-r-0 {
+  padding-right: 0 !important;
+}
+
+.m-l-0 {
+  margin-left: 1px !important;
+}
+.m-r-0 {
+  margin-right: 1px !important;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+  padding: 15px 0 15px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer p {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: right;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.footer-line {
+  width: 45px;
+  height: 0;
+  border: 1px solid #FFFFFF;
+  transform: rotate(90deg);
+  margin: 19px auto;
+}
+
+.footer-middle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.info-seconds {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 15.5px;
+  color: #FFFFFF;
+}
+
+.info-seconds-text {
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+/* Continuar Navegando */
+.button-navigation button {
+  position: absolute;
+  background: #FFFFFF;
+  width: 100%;
+  height: 70px;
+  bottom: -55px;
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #C13216;
+  border: 0;
+  box-shadow: none;
+}
+
+.button-navigation button:hover {
+  color: #C13216;
+}
+
+/* Logout */
+.button-navigation-logout button {
+  background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: -55px;
+  border: 0;
+  box-shadow: none;
+  font-family: 'Mark Pro Regular';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.button-navigation-logout button:hover {
+  color: #FFFFFF;
+}
+
+.btn-footer-lg {
+  display: block;
+}
+
+.btn-footer-xs {
+  display: none;
+}
+
+/* Comportamentos */
+/* Dispositivos pequenos (Celulares, 320px and up) */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  body {
+    background-image: none;
+    height: 0;
+  }
+  .home-climate-top {
+    float: none !important;
+    text-align: center !important;
+  }
+  .clima-hide {
+    display: none;
+  }
+  .home-text-body {
+    margin: 33px 0;
+    text-align: center;
+  }
+  .home-text-body h5 {
+    line-height: 45px;
+  }
+  .footer {
+    position: absolute;
+    height: auto;
+    bottom: -128vh;
+  }
+  .footer p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-line-hidden {
+    display: none;
+  }
+  .button-navigation button {
+    position: unset;
+    margin-bottom: 10px;
+  }
+  .button-navigation-logout button {
+    position: unset;
+    border: 1px solid #fff;
+  }
+  .btn-footer-lg {
+    display: none;
+  }
+  .btn-footer-xs {
+    display: block;
+  }
+}
+
+/* Dispositivos médios (tablets, etc...) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background-position: 0 100%;
+  }
+  .home-text-body {
+    margin: 73px 35px;
+  }
+  .footer-line-hidden {
+    display: none;
+  }
+  .info-user-footer p{
+    text-align: center !important;
+    margin-bottom: 45px !important;
+  }
+  .footer {
+    position: absolute;
+    height: auto;
+    bottom: -17vh;
+  }
+  .button-navigation button {
+    position: unset;
+  }
+  .button-navigation-logout button {
+    position: unset;
+  }
+}
+
+/* Dispositivos largos (desktops, 992px, etc...) */
+@media (min-width: 992px) and (max-width: 2600px) {
+  body {
+    background-position: 0 100%;
+  }
+ }
